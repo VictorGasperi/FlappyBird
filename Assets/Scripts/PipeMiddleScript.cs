@@ -6,11 +6,11 @@ using UnityEngine.Serialization;
 
 public class PipeMiddleScript : MonoBehaviour
 { 
-    [SerializeField] private PlayerScore _playerScoreScript;
+    [FormerlySerializedAs("_playerScoreScript")] [SerializeField] private PlayerScoreScript playerScoreScriptScript;
 
     void Start()
     {
-        _playerScoreScript = GameObject.FindGameObjectWithTag("Logic").GetComponent<PlayerScore>();
+        playerScoreScriptScript = GameObject.FindGameObjectWithTag("Logic").GetComponent<PlayerScoreScript>();
     }
     
     
@@ -18,7 +18,7 @@ public class PipeMiddleScript : MonoBehaviour
     {
         if (col.gameObject.layer == 3)
         {
-            _playerScoreScript.addScore(1);
+            playerScoreScriptScript.addScore(1);
         }
     }
 }

@@ -16,7 +16,7 @@ public class BirdScript : MonoBehaviour
         set => _myRigidBody = value;
     }
     [SerializeField] private float flapStrength;
-    [SerializeField] private PlayerScore _playerScoreScript;
+    [FormerlySerializedAs("_playerScoreScript")] [SerializeField] private PlayerScoreScript playerScoreScriptScript;
     [SerializeField] private GameOver _gameOverScript;
     [SerializeField] private CircleCollider2D _cicleCollider;
     private bool birdIsAlive = true;
@@ -42,7 +42,7 @@ public class BirdScript : MonoBehaviour
     
     void Start()
     {
-        _playerScoreScript = GameObject.FindGameObjectWithTag("Logic").GetComponent<PlayerScore>();
+        playerScoreScriptScript = GameObject.FindGameObjectWithTag("Logic").GetComponent<PlayerScoreScript>();
     }
 
 

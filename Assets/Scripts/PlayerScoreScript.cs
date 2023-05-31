@@ -5,9 +5,9 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PlayerScore : MonoBehaviour
+public class PlayerScoreScript : MonoBehaviour
 {
-    private int playerScore;
+    public int PlayerScore { get; private set; }
     [SerializeField] private Text scoreText;
 
     public UnityEvent AddScoreEvent;
@@ -15,8 +15,8 @@ public class PlayerScore : MonoBehaviour
     [ContextMenu("Increase Score")]
     public void addScore(int scoreToAdd)
     {
-        playerScore += scoreToAdd;
-        scoreText.text = playerScore.ToString();
+        PlayerScore += scoreToAdd;
+        scoreText.text = PlayerScore.ToString();
         AddScoreEvent.Invoke();
     }
 }
