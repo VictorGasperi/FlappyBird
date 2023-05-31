@@ -11,6 +11,11 @@ public class PipeScript : MonoBehaviour
     private float deadZone = -30;
     [SerializeField] private GameOver _gameOverScript;
 
+    private void Awake()
+    {
+        _gameOverScript = GameObject.FindWithTag("GameOver").GetComponent<GameOver>();
+    }
+
     private void OnEnable()
     {
         _gameOverScript.GameOverEvent.AddListener(OnGameOver);
@@ -23,12 +28,6 @@ public class PipeScript : MonoBehaviour
     private void OnGameOver()
     {
         moveSpeed = 0;
-    }
-
-    private void Start()
-    {
-        _gameOverScript = gameObject.transform.parent.
-            //todo: achar uma maneira de acessar o script do game over para zerar a velocidade dos pipes quando o player morrer
     }
 
     void Update()
