@@ -27,7 +27,7 @@ public class PipeSpawnScript : MonoBehaviour
 
     private void OnGameOver()
     {
-        StopCoroutine(SpawnPipe());
+        StopAllCoroutines();
     }
 
     public float LowestPoint
