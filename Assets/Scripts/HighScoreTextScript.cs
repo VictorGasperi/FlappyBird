@@ -10,19 +10,11 @@ public class HighScoreTextScript : MonoBehaviour
 {
     [SerializeField] private SaveHighScore _saveHighScoreScript;
     [SerializeField] private Text _highScoreText;
-
-    private void OnEnable()
-    {
-        _saveHighScoreScript.HighScoreChangedEvent.AddListener(OnHighScoreChanged);
-    }
-
-    private void OnDisable()
-    {
-        _saveHighScoreScript.HighScoreChangedEvent.AddListener(OnHighScoreChanged);
-    }
-
-    private void OnHighScoreChanged()
+    
+    private void Awake()
     {
         _highScoreText.text = _saveHighScoreScript.HighScore.ToString();
     }
+
+    
 }

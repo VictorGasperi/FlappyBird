@@ -27,6 +27,7 @@ public class SaveHighScore : MonoBehaviour
         if (_playerScore.PlayerScore <= HighScore) return;
         PlayerPrefs.SetInt("highscore", _playerScore.PlayerScore);
         PlayerPrefs.Save();
+        Debug.Log(HighScore);
         HighScoreChangedEvent.Invoke();
     }
     [ContextMenu("ResetHighScore")]
