@@ -10,7 +10,7 @@ public class RestartGame : MonoBehaviour
     
     public void RestartGameMethod()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("MainMenu");
         RestartGameEvent.Invoke();
     }
 }
