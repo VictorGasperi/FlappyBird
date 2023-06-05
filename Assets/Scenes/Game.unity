@@ -1052,6 +1052,7 @@ GameObject:
   - component: {fileID: 949009835}
   - component: {fileID: 949009837}
   - component: {fileID: 949009836}
+  - component: {fileID: 949009838}
   m_Layer: 3
   m_Name: Tail
   m_TagString: Untagged
@@ -1147,6 +1148,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &949009838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949009834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e6a03c920c1ca340a455c7b9f10515e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tailAnimator: {fileID: 949009836}
+  _birdScript: {fileID: 993912828}
 --- !u!1 &993912827
 GameObject:
   m_ObjectHideFlags: 0
