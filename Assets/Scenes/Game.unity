@@ -7305,7 +7305,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipe: {fileID: 7409064172485311926, guid: 301ec08274be42044aa17a79c8179cd2, type: 3}
-  spawnRate: 5
   _gameOverScript: {fileID: 1151215239}
   PipeSpawnedEvent:
     m_PersistentCalls:
@@ -7318,7 +7317,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2116320057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.98, y: 14.59, z: -9.972945}
+  m_LocalPosition: {x: 30.2, y: 17.2, z: -9.972945}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
