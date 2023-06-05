@@ -16,7 +16,7 @@ public class BirdScript : MonoBehaviour
         set => _myRigidBody = value;
     }
     [SerializeField] private float flapStrength;
-    [FormerlySerializedAs("_playerScoreScript")] [SerializeField] private PlayerScoreScript playerScoreScriptScript;
+    [SerializeField] private PlayerScoreScript playerScoreScriptScript;
     [SerializeField] private GameOver _gameOverScript;
     [SerializeField] private CircleCollider2D _cicleCollider;
     private bool birdIsAlive = true;
@@ -51,6 +51,11 @@ public class BirdScript : MonoBehaviour
         {
             MyRigidBody.velocity = Vector2.up * flapStrength;
             JumpEvent.Invoke();
+        }
+
+        if (context.canceled)
+        {
+            SpaceUpEvent.Invoke();
         }
     }
 }
