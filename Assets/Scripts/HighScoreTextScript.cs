@@ -8,13 +8,11 @@ using UnityEngine.UI;
 
 public class HighScoreTextScript : MonoBehaviour
 {
-    [SerializeField] private SaveHighScore _saveHighScoreScript;
+    //[SerializeField] private SaveHighScore _saveHighScoreScript;
     [SerializeField] private Text _highScoreText;
-    
-    private void Awake()
-    {
-        _highScoreText.text = _saveHighScoreScript.HighScore.ToString();
-    }
 
-    
+    private void Start()
+    {
+        _highScoreText.text = HighScoreScript.GetHighScore.ToString();
+    }
 }
