@@ -1,4 +1,3 @@
-particulas
 aumentar a velocidade dos cones conforme o jogo segue
 extras ( coisas alem do flappy )
 

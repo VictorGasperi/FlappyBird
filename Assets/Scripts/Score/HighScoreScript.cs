@@ -6,8 +6,7 @@ using UnityEngine.Events;
 
 public static class HighScoreScript
 {
-    //private static int _highScore;
-    
+
     public static int GetHighScore => PlayerPrefs.GetInt("highscore"); 
 
     public static bool SetNewHighScore(int score)

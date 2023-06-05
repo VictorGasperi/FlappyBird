@@ -33,7 +33,7 @@ public class HighScoreHandler : MonoBehaviour
 
     private void Awake()
     {
-        _highScore = PlayerPrefs.GetInt("highscore");
+        _highScore = HighScoreScript.GetHighScore;
     }
 
     [ContextMenu("ResetHighScore")]

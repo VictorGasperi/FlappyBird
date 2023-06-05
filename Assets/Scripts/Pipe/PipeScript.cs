@@ -7,7 +7,7 @@ using UnityEngine;
 public class PipeScript : MonoBehaviour
 {
 
-    private float moveSpeed = 5;
+    [SerializeField] private float moveSpeed = 15;
     private float deadZone = -30;
     [SerializeField] private GameOver _gameOverScript;
 
@@ -30,7 +30,7 @@ public class PipeScript : MonoBehaviour
         moveSpeed = 0;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
 

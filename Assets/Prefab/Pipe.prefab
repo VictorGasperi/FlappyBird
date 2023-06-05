@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be2aae71ae9637640af4521e4e3a838f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerScoreScript: {fileID: 0}
+  playerScoreScriptScript: {fileID: 0}
 --- !u!1 &7409064172485311926
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,8 +230,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b51d6ed10be9c64a9bd58303d74cebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -30
+  moveSpeed: 15
+  _gameOverScript: {fileID: 0}
 --- !u!1 &7920585138952645306
 GameObject:
   m_ObjectHideFlags: 0
