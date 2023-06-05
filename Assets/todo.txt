@@ -1,6 +1,3 @@
-Fazer um main menu
-Fazer com que quando o player aperte o botao de jogar novamente ele retorne para a cena do main menu
-salvar os high score
 animacoes 
 aumentar a velocidade dos cones conforme o jogo segue
 extras ( coisas alem do flappy )

@@ -44,15 +44,6 @@ public class BirdScript : MonoBehaviour
     {
         playerScoreScriptScript = GameObject.FindGameObjectWithTag("Logic").GetComponent<PlayerScoreScript>();
     }
-
-
-    // public void OnSpaceUp(InputAction.CallbackContext context)
-    // {
-    //     if (context.canceled)
-    //     {
-    //         SpaceUpEvent.Invoke();
-    //     }
-    // }
     
     public void Jump(InputAction.CallbackContext context)
     {
