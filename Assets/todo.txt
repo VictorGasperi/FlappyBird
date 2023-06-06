@@ -1,4 +1,12 @@
-aumentar a velocidade dos cones conforme o jogo segue
 extras ( coisas alem do flappy )
-
 iniciar outro projeto
+ideias: 
+    pacman
+    doddle jump
+    pong
+    space invaders
+    breakeout
+    Pop the lock
+    angry birds
+    
+    
